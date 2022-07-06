@@ -1,0 +1,132 @@
+/**{
+    margin: 0;
+    padding: 0;
+}*/
+ 
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+#encabezado{
+    margin: 10px 50px;
+}
+
+body{
+    background-image: url('../imagenes/fondo.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Jost {
+    font-family: 'Jost', sans-serif; 
+    margin-right: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+.subrayado{
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.carrito{
+    padding-right: 10px;
+    width: 60px;
+    height: 60px;
+    margin-left: 39%;
+}
+
+.menu{
+    margin-left: 0px;
+    padding-right: 10%;
+    margin-right: 30%;
+    width: 50px;
+    height: 60px;
+    margin-top: 0%;
+}
+
+.logo{
+    border: 4px powderblue;
+    border-style: outset;
+    text-align: center;
+    width: 100px;
+    height: 80px;
+}
+
+.subrayado2{
+    text-decoration: none;
+    color: black;
+    margin-right: 0px;
+}
+
+#footer{
+    text-align: center;
+}
+
+.redes{
+    width: 50px;
+    height: 50px;
+}
+
+.fotos{
+    width: 600px;
+    height: 450px;    
+}
+
+#fotos1{
+    margin-right: 0px;
+    margin-left: 0px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.fotoult{
+    width: 600px;
+    height: 450px;
+    margin-left: 100%;
+}
+
+#contacto{
+    display: grid;
+    justify-items: center;
+    line-height: 30px;
+}
+
+.consulta{
+    width: 99%;
+    height: 100px;
+    
+}
+
+.email{
+    margin-left: 10px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width:599px) {
+
+    .carrito{
+        padding-right: 0px;
+        margin-left: 200px;
+        margin-top: -90%;
+    }
+
+    .logo{
+        margin-left: 44px;
+        margin-top: -80px;
+    }
+
+    .menu{
+        margin-left: -70px;
+        margin-top: 20px;
+    }
+
+    .subrayado{
+        margin-left: -68px;
+    }
+}
