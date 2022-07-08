@@ -6,31 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
 
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
 </head>
 <body>
 
-        <header id="header-nav">
-            <div class="header">
-                 <figure>
-                    <img src="../imagenes/menu-desp.png" alt="Menú desplegable" class="menu-icono">
-                    <a href="../index.html">
-                    <img src="../imagenes/logo1.png" alt="Logo de Macanas" class="logo"></a>
-                    <img src="../imagenes/carrito.png" alt="Carrito de compras" class="carrito"> 
-                </figure>
-            </div>
-            
-            <nav class="nav">
-                <ul>
-                    <li> <a href="kigurumis.html" class="subrayado">Kigurumis</a></li>
-                    <li> <a href="happynappers.html" class="subrayado">Happy Nappers</a></li>
-                    <li> <a href="disfraces.html" class="subrayado">Disfraces</a></li>
-                    <li> <a href="contacto.html" class="subrayado">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <nav class="navbar navbar-light bg-light">
+                <div class="container">
+                  <a class="navbar-brand" href="../index.html">
+                    <img src="../imagenes/logo1.png" alt="" width="180" height="90">
+                  </a>
+                </div>
+              </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="row align-items-start">
+            <div class="col">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="kigurumis.html">Kigurumis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="happynappers.html">Happy Nappers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="disfraces.html">Disfraces</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </nav>
 
-    <section id="contacto">
+    <!-- <section id="contacto">
         <form action="" method="GET" enctype="multipart/form-data"></form>
         <fieldset>
             <legend class="contacto-font">Contacto</legend>
@@ -83,6 +99,22 @@
             <a href="https://www.instagram.com/macanasar" target="_blank">
             <img src="../imagenes/ig-logo.png" alt="ícono instagram" class="redes"></a>
         </section>
-    </footer>
+    </footer> -->
+    <div class="container">
+        <div class="row  justify-content-center">
+    <div class="col-md-4 col-xs-6">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Dirección de email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
