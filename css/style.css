@@ -78,11 +78,6 @@ li{
     list-style: none;
 }
 
-li:hover{
-    color: aqua;
-
-}
-
 .subrayado{
     text-decoration: none;
     color: black;
@@ -108,8 +103,6 @@ li:hover{
     width: 250px;
     height: 150px;
 }
-
-
 
 .subrayado2{
     text-decoration: none;
@@ -174,8 +167,16 @@ li:hover{
     margin-left: 10px;
 }
 
+/* #fotos1{
+    transition: height 2s, width 2s;
+}
 
- @media only screen and (max-width: 767px) {
+#fotos1:hover{
+    width: 700px;
+    height: 550px;
+} */
+
+/* @media only screen and (max-width: 767px) {
     .img{
         width: 200px;
         height: 150px;
@@ -183,4 +184,4 @@ li:hover{
 
     }
 
-} 
+}  */
