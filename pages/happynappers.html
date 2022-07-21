@@ -1,59 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Nappers</title>
 
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  </head>
 <body>
-    
-        <header id="header-nav">
-            <div class="header">
-                 <figure>
-                    <img src="../imagenes/menu-desp.png" alt="Menú desplegable" class="menu-icono">
-                    <a href="../index.html">
-                    <img src="../imagenes/logo1.png" alt="Logo de Macanas" class="logo"></a>
-                    <img src="../imagenes/carrito.png" alt="Carrito de compras" class="carrito"> 
-                </figure>
-            </div>
-            
-            <nav class="nav">
-                <ul>
-                    <li> <a href="kigurumis.html" class="subrayado">Kigurumis</a></li>
-                    <li> <a href="happynappers.html" class="subrayado">Happy Nappers</a></li>
-                    <li> <a href="disfraces.html" class="subrayado">Disfraces</a></li>
-                    <li> <a href="contacto.html" class="subrayado">Contacto</a></li>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container">
+                      <a class="navbar-brand" href="../index.html">
+                        <img src="../imagenes/logo1.png" alt="" width="180" height="90">
+                      </a>
+                    </div>
+                  </nav>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="row align-items-start">
+                <div class="col">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="kigurumis.html">Kigurumis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="happynappers.html">Happy Nappers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="disfraces.html">Disfraces</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                  </li>
                 </ul>
-            </nav>
-        </header>
+              </div>
+            </div>
+            </div>
+          </nav>
 
-      <section>
-        <figure id="fotos1">
-            <img src="../imagenes/happy/happynap1.jpg" alt="Happy Napper de gato rosa" class="fotos">
-            <img src="../imagenes/happy/happynap2.jpg" alt="Happy Napper de gato rosa y husky" class="fotos">
-            <img src="../imagenes/happy/happynap3.jpg" alt="Happy Napper de perro marrón y verde" class="fotos">
-            <img src="../imagenes/happy/happynap4.jpg" alt="Happy Napper de unicornio rosa" class="fotos">
-            <img src="../imagenes/happy/happynap5.jpg" alt="Happy Napper de husky" class="fotos">
-            <img src="../imagenes/happy/happynap6.jpg" alt="Happy Nappers de unicornios rosas" class="fotos">
-            <img src="../imagenes/happy/happynap7.jpg" alt="Happy Napper de perro marrón y amarillo" class="fotos">
-            <img src="../imagenes/happy/happynap8.jpg" alt="Happy Napper de husky" class="fotos">
-        </figure>
-      </section>
+          <section class="galeria">
+            <a href="#image1"><img src="../imagenes/happy/happynap1.jpg" alt="Happy Napper de gato rosa"></a>
+            <a href="#image2"><img src="../imagenes/happy/happynap2.jpg" alt="Happy Napper de gato rosa y husky"></a>
+            <a href="#image3"><img src="../imagenes/happy/happynap3.jpg" alt="Happy Napper de perro marrón y verde"></a>
+            <a href="#image4"><img src="../imagenes/happy/happynap4.jpg" alt="Happy Napper de unicornio rosa"></a>
+            <a href="#image5"><img src="../imagenes/happy/happynap5.jpg" alt="Happy Napper de husky"></a>
+            <a href="#image6"><img src="../imagenes/happy/happynap6.jpg" alt="Happy Nappers de unicornios rosas"></a>
+            <a href="#image7"><img src="../imagenes/happy/happynap7.jpg" alt="Happy Napper de perro marrón y amarillo"></a>
+            <a href="#image8"><img src="../imagenes/happy/happynap8.jpg" alt="Happy Napper de husky"></a>
+          </section>
 
-    <footer>
-        <section class="footer">
-            <a href="https://www.facebook.com/macanasar" target="_blank">
-            <img src="../imagenes/fb.png" alt="ícono Facebook" class="redes"></a>
-            <a href="https://www.instagram.com/macanasar" target="_blank">
-            <img src="../imagenes/ig-logo.png" alt="ícono instagram" class="redes"></a>
+          <article class="light-box" id="image1">
+            <a href="#image8" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../imagenes/happy/happynap1.jpg" alt="Happy Napper de gato rosa">
+            <a href="#image2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image2">
+            <a href="#image1" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../imagenes/happy/happynap2.jpg" alt="Happy Napper de gato rosa y husky">
+            <a href="#image3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image3">
+            <a href="#image2" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../imagenes/happy/happynap3.jpg" alt="Happy Napper de perro marrón y verde">
+            <a href="#image4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image4">
+            <a href="#image3" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../imagenes/happy/happynap4.jpg" alt="Happy Napper de unicornio rosa">
+            <a href="#image5" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image5">
+            <a href="#image4" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../imagenes/happy/happynap5.jpg" alt="Happy Napper de husky">
+            <a href="#image6" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image6">
+            <a href="#image5" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../imagenes/happy/happynap6.jpg" alt="Happy Nappers de unicornios rosas">
+            <a href="#image7" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image7">
+            <a href="#image6" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../imagenes/happy/happynap7.jpg" alt="Happy Napper de perro marrón y amarillo"">
+            <a href="#image8" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image8">
+            <a href="#image7" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../imagenes/happy/happynap8.jpg" alt="Happy Napper de husky">
+            <a href="#image1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+          </article>
+    </div>
+
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/macanasar" role="button" target="_blank">
+          <!-- <i class="fab fa-facebook-f"></i>  -->
+          <img src="../imagenes/fb.png" width="50px" height="50px"></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/macanasar/" role="button" target="_blank">
+          <!-- <i class="fab fa-instagram"></i>  -->
+          <img src="../imagenes/ig-logo.png" width="50px" height="50px"></a>
         </section>
+       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script src="https://kit.fontawesome.com/64ef1f9fe4.js" crossorigin="anonymous"></script>
+  </body>
 </html>
