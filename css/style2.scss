@@ -1,8 +1,29 @@
 @import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
+
+// $estilos: (
+//   centro: center,
+//   fuente: 'Edu VIC WA NT Beginner', cursive,
+// );
+
+$titulos: ( 
+        kigu: #39af9f,
+        happynap:  #ac2c47,
+        disf: #e67ab9
+); 
+
+@each $titulo, $color in $titulos {
+   .h2-#{$titulo} {
+       color: $color;
+   }
+}
+
 
 #contacto{
-    margin-top: 3% !important;
+    margin-top: 1.5% !important;
     margin-bottom: 2%;
+    // text-align: map-get($map: $estilos, $key: centro);
+    // font-family: map-get($map: $estilos, $key: fuente);
 }
 
 li{
@@ -111,6 +132,42 @@ li{
     height: 120px;
     width: 120px;
 }
+
+h2{
+    // text-align: map-get($map: $estilos, $key: centro);
+    // font-family: map-get($map: $estilos, $key: fuente);
+    text-align: center;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    padding-top: 20px;
+}
+
+.h2-disf{
+    @extend h2;
+    background-color: bisque;
+}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.h2-kigu{
+    @include sizes(90px, 170px);
+}
+
+.contacto-font{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.btn-env{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// .img-centro{}
+
 
 @media screen and (max-width:400px){
     .galeria{
