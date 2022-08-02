@@ -1,10 +1,11 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
 
-// $estilos: (
-//   centro: center,
-//   fuente: 'Edu VIC WA NT Beginner', cursive,
-// );
+$estilos: (
+  centro: center,
+  tfuente: 16px,
+  centrovert: center
+);
 
 $titulos: ( 
         kigu: #39af9f,
@@ -22,8 +23,8 @@ $titulos: (
 #contacto{
     margin-top: 1.5% !important;
     margin-bottom: 2%;
-    // text-align: map-get($map: $estilos, $key: centro);
-    // font-family: map-get($map: $estilos, $key: fuente);
+    text-align: map-get($map: $estilos, $key: centro);
+    font-size: map-get($map: $estilos, $key: tfuente);
 }
 
 li{
@@ -134,9 +135,7 @@ li{
 }
 
 h2{
-    // text-align: map-get($map: $estilos, $key: centro);
-    // font-family: map-get($map: $estilos, $key: fuente);
-    text-align: center;
+    text-align: map-get($map: $estilos, $key: centro);
     font-family: 'Edu VIC WA NT Beginner', cursive;
     padding-top: 20px;
 }
@@ -146,13 +145,24 @@ h2{
     background-color: bisque;
 }
 
+@mixin galeria-mixin{
+    display: grid;
+	justify-content:center;
+    background-color: beige;
+    
+}
+
+.galeria{
+    @include galeria-mixin;
+}
+
 @mixin sizes($width, $height) {
     height: $height;
     width: $width;
 }
 
-.h2-kigu{
-    @include sizes(90px, 170px);
+#tamcarousel{
+    @include sizes(auto, 460px)
 }
 
 .contacto-font{
