@@ -1,9 +1,45 @@
 @import "variables";
 
-#contacto{
-    margin-top: 3% !important;
-    margin-bottom: 2%;
+.bodyc{
+    background-color: $fondoc;
+    #contacto{
+        margin-top: 3% !important;
+        margin-bottom: 2%;
+        border-radius: 3px;
+    }
 }
+
+.titulot, .titulo1{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.textot{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
+.bodyt{
+    background-color: $fondot;
+    .texta{
+        text-align: center;
+        .titulost{
+            font-family: 'Aboreto', cursive;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: salmon;
+            }
+    
+            .titulo1{
+                font-size: medium;
+            }
+        }
+    }
+}
+
 
 li{
     list-style: none;

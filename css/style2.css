@@ -1,6 +1,40 @@
-#contacto {
+.bodyc {
+  background-color: rgb(210, 180, 140);
+}
+.bodyc #contacto {
   margin-top: 3% !important;
   margin-bottom: 2%;
+  border-radius: 3px;
+}
+
+.titulot, .titulo1 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+.textot {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-style: italic;
+}
+
+.bodyt {
+  background-color: rgb(255, 240, 245);
+}
+.bodyt .texta {
+  text-align: center;
+}
+.bodyt .texta .titulost {
+  font-family: "Aboreto", cursive;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.bodyt .texta .titulost:hover {
+  color: salmon;
+}
+.bodyt .texta .titulost .titulo1 {
+  font-size: medium;
 }
 
 li {
@@ -99,9 +133,14 @@ li:hover {
   width: 120px;
 }
 
-@media screen and (max-width: 400px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .galeria {
     grid-template-columns: repeat(auto-fit, min-max(200px, 1fr));
+  }
+  .light-box {
+    height: 100vh;
+    width: 100%;
+    position: relative;
   }
   .close {
     top: 20px;
